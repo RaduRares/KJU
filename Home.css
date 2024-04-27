@@ -1,0 +1,93 @@
+.home{
+    display: flex;
+   
+    margin-left:auto ;
+    margin-right:auto;
+
+  max-width: 1300px;
+   background-repeat: no-repeat; /* Asta va face ca imaginea să nu se repete */
+  background-size: cover; /* Asta va face ca imaginea să acopere întregul container fără să se deformeze */
+  background-position: center; /* Asta va centra imaginea în container */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('D:\An 3\Proiect_Web\proiect\src\Imagini\Logo_cu_fundal.png');
+
+  /* or for a gradient */
+  background: linear-gradient(to right, #f37522, #d3b9b9);
+}
+
+.home__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* sau center, în funcție de cum dorești să fie aranjate */
+  }
+  
+  
+.home__image{
+    width: 100%;
+    z-index: -1;
+    margin-bottom: -150px;
+    mask-image: linear-gradient((to bottom,rgba(0,0,0,0),rgba
+    (0,0,0,0)));
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.home_sorting{
+display: flex;
+margin-top: 20px;
+}
+.home__container {
+    /* Utilizează acest container pentru a centra produsele */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; /* Limita lățimii containerului pentru a evita întinderea prea mult la rezoluții mari */
+    margin: auto;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+
+    /* or for a gradient */
+
+
+  }
+  .product {
+    width: 30%; /* sau o altă valoare care să funcționeze pentru tine */
+    margin: 1%; /* asigură spațiere între produse */
+  }
+  
+@media screen and (max-width: 480px) {
+  .home__row {
+      /* For very small screens, you might want each product to take full width */
+  }
+
+  .product {
+      flex: 1 1 100%; /* Each product takes full width of the container */
+      margin: 1% 0; /* Adjust top and bottom margins as needed */
+  }
+}
+
+  @media screen and (max-width: 768px) {
+    .home__row {
+        /* Adjust the number of items per row by changing 'flex-basis' */
+        justify-content: center; /* This centers the items if they take full width */
+    }
+
+    .product {
+        flex: 1 1 45%; /* Adjust the percentage to have two items per row */
+        margin: 0.5%; /* Adjust margins for spacing between products */
+        max-height: none; /* Reset max-height if needed */
+    }
+}
+  /* Media query pentru ecrane mai mici */
+  @media (max-width: 960px) {
+    .product {
+      width: calc(50% - 10px); /* Oferă un pic de spațiu între produse */
+      margin: 5px; /* Ajustează după preferințe */
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .product {
+      width: calc(100% - 20px); /* Redu spațiul ocupat de produs pentru a permite margini */
+      margin: 10px; /* Ajustează după preferințe */
+    }
+  }
+  

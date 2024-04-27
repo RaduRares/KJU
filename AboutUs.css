@@ -1,0 +1,17 @@
+.about-us {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: rgb(184, 69, 69);
+  }
+  
+  .about-us h1 {
+    text-align: center;
+  }
+  
+  .about-us p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  

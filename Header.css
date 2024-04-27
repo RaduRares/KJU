@@ -1,0 +1,172 @@
+.header{
+    height:55px;
+
+    display: flex;
+    align-items: center;
+    background-color: #ce8f31;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+.header_logo{
+width: 100px;
+object-fit: contain;
+margin: 0 0px;
+margin-top: 10px;
+
+}
+.header_searchIcon{
+    padding: 5px;
+    height: 22px !important;
+    background: transparent;
+    border: none;
+}
+.header_search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+}
+.header_searchInput{
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+
+}
+.header,
+.header_option,
+.header_optionLine1,
+.header_optionLine2,
+.search_result_item {
+    color: black; /* This will ensure text is black for these classes */
+}
+.header_nav
+{
+display: flex;
+justify-content: space-evenly;
+
+
+}
+.header a,
+.search_result_item a {
+    color: black; /* Ensures links are also black */
+    text-decoration: none; /* Removes underline from links */
+}.header_option a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* The color will be the same as the parent element */
+    cursor: default; /* Removes the pointer cursor usually shown on links */
+  }
+  
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-right: 25px;
+    margin-right: 10px;
+    color:#000000;
+}
+.header_optionLine1{
+    font-size: 10px;
+
+}
+.header_optionLine2{
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.header_optionBascket{
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    color:#000000
+} 
+.header_optionLineTwoheader__backetCount{
+
+}.search_results {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 100;
+    display: block;
+}
+.header_searchInput:focus + .search_results,
+.search_results:hover {
+    display: block; /* Show when the search input is focused or when hovering over the results */
+}
+.search_result_item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.search_result_item:last-child {
+    border-bottom: none;
+}
+
+.search_result_item:hover {
+    background-color: #f8f8f8;
+}
+
+.header_search {
+    position: relative;
+}
+@media screen and (max-width: 768px) {
+    /* Adjust styles for screens smaller than 768px wide */
+    @media screen and (max-width: 768px) {
+        .header_optionLine1, .header_optionLine2 {
+            color: black;
+            /* ... other styles */
+        }
+    }
+    .header {
+        /* Adjust the height if needed */
+       /* Or a specific height */
+        flex-direction: column; /* Stack the items vertically */
+        padding: 5px; /* Add some padding */
+    }
+
+    .header_logo {
+        margin-bottom: 10px;
+    }
+
+    .header_search {
+        width: 90%;    }
+
+    .header_nav {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+
+    .header_option {
+        padding: 5px;
+    }
+
+    .header_optionLine1, .header_optionLine2 {
+        font-size: 12px; /* Adjust the font size */
+    }
+
+ 
+}
+
+/* Consider even smaller devices */
+@media screen and (max-width: 480px) {
+    /* Adjust styles for screens smaller than 480px wide */
+    .header_optionLine1,
+    .header_optionLine2 {
+        font-size: 14px; /* Even larger text for very small screens */
+    }
+    .header_optionLine1, .header_optionLine2 {
+        color: black;
+        /* ... other styles */
+    }
+    .header_searchInput {
+        /* You might need to adjust padding or font size here too */
+    }
+
+    /* ... additional style adjustments for small screens ... */
+}

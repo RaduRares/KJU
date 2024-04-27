@@ -1,0 +1,35 @@
+.checkout{
+    display: flex;
+   padding: 20px;
+    background-color: white;
+    height: max-content;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.chekout__right{
+    display: flex;
+    padding-left: 1500px;
+    
+    
+}
+.checkoutH{
+    display: flex;
+    padding-top: 20px;
+}
+.checkout__title{
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
+}
+.checkout__left {
+    display: grid;
+    /* This will create two columns */
+    grid-gap: 16px; 
+    flex: 0 1 70%; 
+}.checkout__right {
+    flex: 0 1 30%; /* Ocupă mai puțin spațiu, astfel încât să apară în dreapta */
+    padding: 20px;
+    margin-left: 20px;
+    /* Optional: Poți adăuga un border sau alte stiluri pentru a-l evidenția */
+    border: 2px solid #eee;
+    border-radius: 4px;
+}

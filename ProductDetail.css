@@ -1,0 +1,32 @@
+.product-detail-image {
+  max-width: 100%; /* Ajustează lățimea imaginii la container */
+  max-height: 400px; /* Setează înălțimea maximă */
+  object-fit: contain; /* Asigură că imaginea se încadrează complet în spațiul alocat fără a se distorsiona */
+}
+
+.add-to-basket-button {
+  background-color: #f0c14b;
+  border-radius: 2px;
+  width: auto;
+  padding: 10px 20px;
+  border: 1px solid;
+  margin-top: 10px;
+  cursor: pointer;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+
+/* Ajustează dimensiunea stelelor dacă este necesar */
+.star {
+  color: #f0c14b; /* Culoarea stelelor */
+  margin-right: 5px;
+  /* Adaugă aici dimensiunea dorită, dacă este cazul */
+}
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrează orizontal */
+  justify-content: center; /* Centrează vertical dacă este necesar */
+  margin: auto; /* Adaugă marjă automată pe ambele părți pentru aliniere centrală */
+  max-width: 800px; /* Sau orice lățime preferi */
+}

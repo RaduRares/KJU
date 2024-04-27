@@ -1,0 +1,197 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 60px;
+    flex: 1 1 30%; 
+    padding: 40px;
+    width: 100%;
+    max-height: 400px;
+    min-width: 100px;
+    margin-bottom: 20px;
+    padding-left:100px ;
+    padding-top: 150px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('D:\An 3\Proiect_Web\proiect\src\Imagini\Logo_cu_fundal.png');
+
+    /* or for a gradient */
+    background: linear-gradient(to right, #f8f8f8, #857070);
+   
+    z-index: 1;
+    margin-bottom: 20px;
+}
+.marime{
+    padding-top: -2px;
+display: flex;
+}
+
+.descriere{
+    padding-top: 10px;
+    display: flex;
+}
+
+.product  img{
+    max-height:250px;
+    width: 200px; /* sau o valoare fixă, de exemplu '200px' */
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    margin-top: 40px;
+   
+}
+.product__actions {
+    display: flex;
+    align-items: center; /* This will vertically align the select box and button */
+  }
+  
+  .add_remove_select {
+    margin-right: 10px; /* This adds some space between the select box and the button */
+  }
+  
+.product .buton > button {
+    background:  #d4a051;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #5c4e34 #c7e78b #b3ff01;
+    color: #111;
+
+}
+.product__info{
+    height: 150px;
+    margin-bottom: 1px;
+    padding-bottom: 20px;line-height: 1.2;
+}
+.product__rating{
+    display: flex;
+    
+  
+}
+.product__title {
+    font-size: 1em; /* Adjust based on your design */
+    font-weight: bold;
+    line-height: 1.2; /* Tighter line spacing */
+    margin-bottom: 0.5em; /* Space below the title */
+  }.product a { /* Asumând că ai pus tag-ul <a> în jurul <img> */
+    text-decoration: none; /* pentru a elimina sublinierea implicită */
+    color: inherit; /* pentru a menține culoarea textului neschimbată */
+    /* Alte stiluri necesare */
+  }
+  .product__image-link {
+    display: block; /* pentru a te asigura că link-ul nu afectează layout-ul */
+    /* Poti adauga margin sau padding dacă este necesar */
+    
+  }
+  .product__actions {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px; /* ajustează după necesități */
+  }@media screen and (max-width: 768px) {
+    /* Adjust styles for screens smaller than 768px wide */
+    
+    .header {
+        /* Adjust the height if needed */
+        height: auto; /* Flexible height */
+        padding: 5px; /* Reduce padding */
+    }
+
+    .header_logo {
+        width: 80px; /* Reduce the size of the logo */
+        margin: 5px 0; /* Adjust margin */
+    }
+
+    .header_search {
+        margin: 5px 0; /* Add space between the logo and search bar */
+    }
+    .product {
+        /* Align the product container to the left */
+        align-items: flex-start; /* Aligns children (items within the product) to the start of the container which is left */
+        margin-left:0.5; /* Reset any left margin */
+        padding-left: 0.5; /* Reset any left padding */
+        width: 100%; /* Full width to use all available space */
+    }
+    .header_nav {
+        width: 100%; /* Ensure the nav takes the full width */
+        flex-wrap: wrap; /* Allow items to wrap onto the next line */
+        justify-content: center; /* Center items */
+        padding-top: 10px; /* Add space above the nav */
+    }
+
+    .header_option {
+        margin: 5px; /* Reduce margin */
+        padding: 5px; /* Increase padding if needed */
+    }
+
+    .header_optionLine1, .header_optionLine2 {
+        font-size: 12px; /* Adjust font size */
+    }
+
+    .product__info, .product__actions {
+        /* If these have centered content, ensure they align to the left too */
+        align-items: flex-start;
+    }
+
+    .product img {
+        /* Adjust the image size if necessary */
+        max-width: 100%; /* Full width within the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust the text alignment and other properties as necessary */
+    .product__title, .marime, .descriere, .product__price {
+        text-align: left; /* Align text to the left */
+    }
+    /* Increase the size of the search input field */
+    .header_searchInput {
+        font-size: 14px; /* Larger text for readability */
+        padding: 10px; /* Larger padding for a bigger hit area */
+    }
+
+    /* Adjust the search results dropdown */
+    .search_results {
+        max-height: 200px; /* Set a max-height */
+        overflow-y: auto; /* Add scroll for overflow */
+    }
+
+    /* Adjust button sizes and spacing in the header */
+    .header_optionBascket,
+    .header_searchIcon {
+        padding: 5px; /* Smaller padding */
+        font-size: 12px; /* Smaller icons */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust styles for screens smaller than 480px wide */
+    .header_optionLine1,
+    .header_optionLine2 {
+        font-size: 10px; /* Even smaller font size for very small screens */
+    }
+
+    /* ... additional style adjustments for small screens ... */
+}
+@media (max-width: 480px) {
+    .product__title {
+        font-size: 1.2em; /* Slightly larger font size for readability */
+    }
+
+    .marime, .descriere {
+        font-size: 1em; /* Maintain readability on smaller screens */
+    }
+
+    .product__info {
+        padding: 0.5em; /* Less padding for info section */
+    }
+}
+
+/* Further adjustments for very small screens, if necessary */
+@media (max-width: 320px) {
+    .product__title {
+        font-size: 1.1em; /* Adjust as needed */
+    }
+}
+.product .buton > button {
+    width: auto; /* Allow the button to size according to its content */
+    padding: 10px 20px; /* Give some padding for tap targets */
+    font-size: 16px; /* Increase font size for readability */
+}
